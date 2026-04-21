@@ -1,7 +1,7 @@
 # multiagentes-giordano
 
-Plugin Claude Code que implementa o fluxo **multi-agente persistente — sessões persistentes
-multi-agente** com dashboard tmux ao vivo.
+Plugin Claude Code que implementa um fluxo **multi-agente com sessões
+persistentes** e dashboard tmux ao vivo.
 
 Autor: Giordano Rec · MIT.
 
@@ -16,14 +16,26 @@ semanticamente (tool calls, diffs, erros, resultado final).
 Convém pra projetos de médio/grande porte onde 4-10 papéis trabalham em
 paralelo sem se atropelar.
 
-## Instalação
-
-Adiciona o marketplace e instala o plugin:
+## Instalação rápida
 
 ```bash
+# 1) Dependências do sistema (Ubuntu/Debian)
+sudo apt install -y tmux jq gh util-linux python3 tilix
+
+# 2) Autenticar o gh (pro Arquiteto criar repos)
+gh auth login
+
+# 3) Adicionar marketplace e instalar o plugin
 claude plugin marketplace add giordanorec/claude-plugins
 claude plugin install multiagentes-giordano@giordanorec
+
+# 4) Confirmar
+claude plugin list | grep multiagentes
 ```
+
+Guia detalhado passo a passo (macOS, Arch, atualização, desinstalação)
+no README do marketplace:
+https://github.com/giordanorec/claude-plugins#instalação-completa-em-uma-máquina-nova
 
 ## Comandos
 
