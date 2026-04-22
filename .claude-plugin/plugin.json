@@ -1,6 +1,6 @@
 {
   "name": "multiagentes-giordano",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Fluxo multi-agente com sessões persistentes — Arquiteto coordena um time de especialistas, cada um é uma sessão Claude Code separada, comunicação via arquivos (specs/reports/memory), dashboard tmux ao vivo com texto colorido semanticamente (tool calls com emoji, diff visual, badges). Bootstraps um projeto inteiro com Discovery, memória persistente e repo GitHub.",
   "homepage": "https://github.com/giordanorec/multiagentes-giordano",
   "repository": "https://github.com/giordanorec/multiagentes-giordano",
